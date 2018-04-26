@@ -1,0 +1,11 @@
+# This is just my first yaml file created for data storage and configuration purposes.\\
+# Random data would be used
+army:
+  country: 'USA'
+  commander: 'Donald Trump'
+  active-troops: 250_000
+  reservists: 400_000
+  tanks: 12_000
+  war-aircrafts: 18_000
+  is-fighting: true
+  
