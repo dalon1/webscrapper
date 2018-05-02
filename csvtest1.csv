@@ -1,7 +1,3 @@
-country,USA
-commander,Donald Trump
-active-troops,250000
-reservists,400000
-tanks,12000
-war-aircrafts,18000
-is-fighting,True
+cibc,|{'name': 'CIBC', 'url': 'www.google.com', 'account-name-xpath': 'path', 'rates-xpath': 'path'}|
+td-bank,|{'name': 'TD Bank', 'url': 'www.google.com', 'account-name-xpath': 'path', 'rates-xpath': 'path'}|
+scotiabank,|{'name': 'ScotiaBank', 'url': 'www.g.com', 'account-name-xpath': 'path', 'rates-xpath': 'path'}|

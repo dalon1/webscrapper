@@ -2,11 +2,13 @@
 # pip install pyyaml
 import yaml
 
+import urllib.request as request
+from lxml import etree
 import csv
 
 # The next function reads data from a yaml file
 # and displays it into the console
-FILE_NAME = "random.yaml"
+FILE_NAME = "bank-data.yaml"
 
 def builDictionary(stream):
     for key, value in stream.items():
@@ -16,7 +18,7 @@ def builDictionary(stream):
 def readYaml(file_name):
     with open(file_name, "r") as stream:
         try:
-            data = yaml.load(stream)['army']
+            data = yaml.load(stream)['root']
             builDictionary(data)
             createCSV('csvtest1.csv', data)
             #print(yaml.load(stream)['army'])
@@ -32,6 +34,16 @@ def createCSV(file_name, stream):
         for key, value in stream.items():
             file_writer.writerow([key, value])
 
+def accessURL(url):
+    #Proxy should be handled here >>
+    req = request.Request(url = url, headers= {'Content-Type': 'text/html'})
+    response = request.urlopen(req)
+    print(response.read())
+    #tree = etree.parse(response, etree.HTMLParser())
+    #print(test)
+    #nodes = etree.xpath('//*[@id="account-summaries"]/li/div[1]/table')
+    #print(nodes)
 
 
 readYaml(FILE_NAME)
+#accessURL("http://www.scotiabank.com/ca/en/0,,1115,00.html")
