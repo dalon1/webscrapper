@@ -1,0 +1,8 @@
+CIBC,cibc url,cibc account,cibc xpath
+CIBC,cibc url,cibc account 2,cibc xpath 2
+RBC,rbc url,rbc account 1,rbc account 2
+RBC,rbc url,rbc account 2,rbc xpath 2
+RBC,rbc url,rbc account 3,rbc xpath 3
+TD Bank,td bank url,td account 1,td account 2
+TD Bank,td bank url,td account 2,td xpath 2
+TD Bank,td bank url,td account 3,td xpath 3

@@ -1,0 +1,48 @@
+root:
+  - financial_institution:
+    name: 'CIBC'
+    url: 'cibc url'
+    accounts:
+      # Account #1
+      - account:
+        account_name: 'cibc account'
+        account_xpath: 'cibc xpath'
+      
+      # Account #2
+      - account:
+        account_name: 'cibc account 2'
+        account_xpath: 'cibc xpath 2'
+  
+  - financial_institution:
+    name: 'RBC'
+    url: 'rbc url'
+    accounts:
+      # Account 1
+      - account:
+        account_name: 'rbc account 1'
+        account_xpath: 'rbc account 2'
+      # Account #2
+      - account: 
+        account_name: 'rbc account 2'
+        account_xpath: 'rbc xpath 2'
+      # Account #3
+      - account: 
+        account_name: 'rbc account 3'
+        account_xpath: 'rbc xpath 3'
+
+  - financial_institution:
+    name: 'TD Bank'
+    url: 'td bank url'
+    accounts:
+      # Account 1
+      - account:
+        account_name: 'td account 1'
+        account_xpath: 'td account 2'
+      # Account #2
+      - account: 
+        account_name: 'td account 2'
+        account_xpath: 'td xpath 2'
+      # Account #3
+      - account: 
+        account_name: 'td account 3'
+        account_xpath: 'td xpath 3'
