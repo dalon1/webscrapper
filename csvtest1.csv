@@ -1,3 +1,0 @@
-cibc,|{'name': 'CIBC', 'url': 'www.google.com', 'account-name-xpath': 'path', 'rates-xpath': 'path'}|
-td-bank,|{'name': 'TD Bank', 'url': 'www.google.com', 'account-name-xpath': 'path', 'rates-xpath': 'path'}|
-scotiabank,|{'name': 'ScotiaBank', 'url': 'www.g.com', 'account-name-xpath': 'path', 'rates-xpath': 'path'}|
