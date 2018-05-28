@@ -10,7 +10,7 @@ class CSVUtils(object):
             file_writer = csv.writer(csvfile, delimiter = ',', 
             dialect = 'excel', quoting = csv.QUOTE_MINIMAL, quotechar='|')
             for record in records:
-                file_writer.writerow(record)
+                file_writer.writerow([record.bank_name, record.account_name, record.account_range, record.rate])
     
     @staticmethod
     def createCSVRecord(stream):

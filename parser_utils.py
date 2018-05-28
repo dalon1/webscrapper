@@ -42,6 +42,7 @@ class ParserUtils(object):
     @staticmethod
     def parseRatesTable(source, start_xpath, end_xpath):
         records = []
+        single_rate = []
         # Comparing xpaths - char by char to check for differences to determine the size of the table tr[x] & td[y]
         i = [i for i in range(len(start_xpath)) if start_xpath[i] != end_xpath[i]]
         
@@ -50,6 +51,18 @@ class ParserUtils(object):
         for tr in range(int(start_xpath[i[0]]), int(end_xpath[i[0]]) + 1):
             for td in range(int(start_xpath[i[1]]), int(end_xpath[i[1]]) + 1):
                 print("tr: " + str(tr) + ", td: " + str(td))
+                temp_xpath = ParserUtils.replace_str_index(start_xpath, i[0], str(tr))
+                temp_xpath = ParserUtils.replace_str_index(temp_xpath, i[1], str(td))
+                print(temp_xpath)
+                single_rate.append(ParserUtils.parseSingleValue(source, temp_xpath))
 
+            records.append(single_rate)
+            single_rate = []
 
         return records
+    
+    # TODO: this should be moved to String Utils 
+    @staticmethod
+    def replace_str_index(text,index=0,replacement=''):
+        return '%s%s%s'%(text[:index],replacement,text[index+1:])
+

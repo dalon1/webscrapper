@@ -1,0 +1,5 @@
+Simplii,['No Fee Chequing Account'],|['$0.00 - $1,000.00']|,['0.05']
+Simplii,['No Fee Chequing Account'],|['$1,000.01 - $5,000.00']|,['0.10']
+Simplii,['No Fee Chequing Account'],|['$5,000.01 - $10,000.00']|,['0.15']
+Simplii,['No Fee Chequing Account'],|['$10,000.01 - $25,000.00']|,['0.15']
+Simplii,['No Fee Chequing Account'],|['$25,000.01 and up']|,['0.50']

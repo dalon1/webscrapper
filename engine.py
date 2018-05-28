@@ -6,6 +6,7 @@ from financial_institution import FinancialInstitution
 
 def main():
     banks = YAMLUtils.readYAML(YAMLUtils.FILE_NAME)
+    records = []
     
     for bank in banks:
         # Just demo for Simplii
@@ -16,7 +17,14 @@ def main():
         for account in bank['accounts']:
             account_name = ParserUtils.parseAccountName(source, account['account_name_xpath'])
             #fi = FinancialInstitution(bank['name'], account_name, "", "")
-            ParserUtils.parseRatesTable(source, account['account_rates_start'], account['account_rates_end'])
+            rates = ParserUtils.parseRatesTable(source, account['account_rates_start'], account['account_rates_end'])
+            for rate in rates:
+                # don't hardcode indexes
+                records.append(FinancialInstitution(bank['name'], account_name, rate[0], rate[1]))
+            break
+    
+
+    CSVUtils.createCSVFile("target/banks.csv", records)
 
 
 main()
