@@ -5,7 +5,9 @@ import os
 
 # This class contains all methods to handle YAML files
 class YAMLUtils(object):
-    
+    # File Name
+    FILE_NAME = 'financial-institution-config.yaml'
+
     # Method reads YAML File
     @staticmethod
     def readYAML(file_name):

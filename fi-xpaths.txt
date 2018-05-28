@@ -1,0 +1,4 @@
+/html/body/table[1]/tbody/tr/td[2]/table/tbody/tr[2]/td/table/tbody/tr[4]/td[2]/table[3]/tbody/tr/td[2]/h3/a/i
+
+/html/body/table[1]/tbody/tr/td[2]/table/tbody/tr[2]/td/table/tbody/tr[4]/td[2]/table[3]/tbody/tr/td[2]/table/tbody/tr[1]/td[1]/text()
+/html/body/table[1]/tbody/tr/td[2]/table/tbody/tr[2]/td/table/tbody/tr[4]/td[2]/table[3]/tbody/tr/td[2]/table/tbody/tr[9]/td[2]/text()

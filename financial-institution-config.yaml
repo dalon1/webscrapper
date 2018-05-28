@@ -1,4 +1,19 @@
-root:
+root: 
+  - financial_institution:
+    name: 'Simplii'
+    url: 'https://www.simplii.com/en/rates.html'
+    accounts:
+      # No Fee Chequing Account
+      - account:
+        account_name_xpath: '//*[@id="accounts"]/div[1]/div/h4/span/text()'
+        account_rates_start: '//*[@id="accounts"]/div[2]/div/div/div/table/tbody/tr[2]/td[1]/p/text()'
+        account_rates_end: '//*[@id="accounts"]/div[2]/div/div/div/table/tbody/tr[6]/td[2]/p/text()'
+      # High Interest Savings Account
+      - account:
+        account_name_xpath: '//*[@id="accounts"]/div[5]/div/h4/span/text()'
+        account_rates_start: '//*[@id="accounts"]/div[6]/div/div/div/table/tbody/tr[2]/td[1]/p/text()'
+        account_rates_end: '//*[@id="accounts"]/div[6]/div/div/div/table/tbody/tr[2]/td[1]/p/text()'
+  
   - financial_institution:
     name: 'CIBC'
     url: 'cibc url'
